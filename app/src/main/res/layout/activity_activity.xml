@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    tools:context="com.example.arqdsis.myapplication.ActivityA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/light_blue"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_medium"
+        android:textColor="@color/light_blue" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <TextView
+            android:id="@+id/status_view_a"
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="600dp"
+            android:typeface="monospace"/>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/btn_finish_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINALIZAR"
+            android:onClick="finishActivityA"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
